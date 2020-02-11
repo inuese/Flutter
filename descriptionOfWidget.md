@@ -104,3 +104,38 @@ class _MyAppState extends State<MyApp> {
 
 ```
 
+
+## mainAxisAlignment에 관한 내용
+```
+return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Row Widget"),
+        ),
+        body: Row(
+          //mainAxisAlignment는 주 방향 (로우 위젯은 가로)에 있는 위젯들이 어떻게 배치될지를 정한다.
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //MainAxisAlignment.spaceAround : 동일하게 간격을 벌리지만 맨 앞과 맨 뒤의 위젯은 반만 간격을 벌린다.
+          //MainAxisAlignment.spaceBetween : 맨 처음과 맨 끝 위젯을 제외하고 동일하게 간격을 벌린다.
+          //MainAxisAlignment.spaceEvenly : 모든 위젯의 간격을 동등하게 벌린다.
+          children: <Widget>[
+            Container(
+              width: 30,
+              height: 30,
+              color: Colors.red,
+            ),
+            Container(
+              width: 30,
+              height: 30,
+              color: Colors.yellow,
+            ),
+            Container(
+              width: 30,
+              height: 30,
+              color: Colors.green,
+            ),
+          ],
+        ),
+      ),
+    );
+```
