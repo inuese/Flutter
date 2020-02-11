@@ -152,3 +152,40 @@ class _MyAppState extends State<MyApp> {
       ),
     );
 ```
+
+## Container
+Container widget : 위젯들이 들어갈 공간을 정하고나 자식 위젯의 위치, 여백 등을 정할 때 쓰임
+주로 보조적인 위젯 컬러, 넓이, 높이, 위치 등을 사용할 수 있다.
+
+
+```
+MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title:Text("Container Widget"),
+        ),
+        //Container widget : 위젯들이 들어갈 공간을 정하고나 자식 위젯의 위치, 여백 등을 정할 때 쓰임
+        //주로 보조적인 위젯 컬러, 넓이, 높이, 위치 등을 사용할 수 있다.
+
+        body: Container(
+          color: Colors.grey,
+          width: 200,
+          height: 200,
+          child: Container(
+            color:Colors.pinkAccent,
+            //width나 height가 없으면 자식의 크기만큼 공간을 차지하게 된다.
+            width: 50,
+            height: 50,
+            child: Text("good"),
+            //margin 부모위젯으로 부터 얼마나 떨어져 있는 가를 나타낼 때 사용한다.
+            margin: const EdgeInsets.all(8.0), //상하좌우로 8씩 떨어져있음을 나타낸다.
+            //padding  자식위젯이 container로 부터 얼마나 떨어져 있는가를 나타낸다.
+            padding: const EdgeInsets.fromLTRB(10.0, 30.0, 0.0, 0.0),
+
+            alignment: Alignment.center, //원하는 위치에 자식위젯을 옮길 수 있다.
+
+          ),
+        ),
+      ) ,
+    );
+```
