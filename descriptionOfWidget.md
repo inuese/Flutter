@@ -105,7 +105,7 @@ class _MyAppState extends State<MyApp> {
 ```
 
 
-## mainAxisAlignment에 관한 내용
+## mainAxisAlignment와 crossAxisAlignment
 ```
     return MaterialApp(
       home: Scaffold(
