@@ -27,3 +27,38 @@ class BigText extends StatelessWidget {
 	}
 }
 ```
+
+
+
+## 중요 Stateless 위젯은 UI가 그려지면 이후로 값이 변하지 않는다.
+
+```
+class MyApp extends StatelessWidget {
+  int count = 0;
+  // This widget is the root of your application.
+
+  void increase(){
+    count++;
+    print(count);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Stateless Widget"),
+        ),
+        body: Column(
+          children: <Widget>[
+            Center(
+              child:Text("${count}"), //변수를 문자열 안에 넣을 때는 ${ } 로 덮어주어야 한다.
+            ),
+            RaisedButton(onPressed: increase,child:Text("Botton"))
+          ],
+        )
+      )
+    );
+  }
+}
+```
