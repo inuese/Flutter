@@ -32,6 +32,9 @@ class BigText extends StatelessWidget {
 
 ## 중요 Stateless 위젯은 UI가 그려지면 이후로 값이 변하지 않는다.
 
+https://www.youtube.com/watch?v=62M7skA_SJI
+
+
 ```
 class MyApp extends StatelessWidget {
   int count = 0;
