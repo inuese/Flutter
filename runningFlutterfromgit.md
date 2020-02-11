@@ -2,8 +2,7 @@
 
 To clone and run this application, you'll need Git and Flutter installed on your computer. From your command line:
 
-<pre>
-<code>
+```
 # Clone this repository
 $ git clone https://github.com/sabinbajracharya/fluttery-todo.git
 
@@ -15,5 +14,4 @@ $ flutter packages get
 
 # Run the app
 $ flutter run
-</code>
-</pre>
+```
