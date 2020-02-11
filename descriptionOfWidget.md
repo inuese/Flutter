@@ -18,6 +18,8 @@ class ImageWidget extends StatelessWidget {
 }
 ```
 
+위젯 클래스들은 오직 하나의 요구사항만 있다: 그것은 반드시 다른 위젯을 리턴하는 build 메소드를 가지고 있어야 한다는 것이다. 이 규칙의 유일한 예외는 기본타입(primitive types) (대개 Strings 또는 numbers)을 반환하는 Text와 같은 낮은 수준의 위젯이다.
+
 ```.{dart}
 class BigText extends StatelessWidget {
 	Widget build(context) {
