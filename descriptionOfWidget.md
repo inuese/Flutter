@@ -65,3 +65,42 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+
+
+
+## Stateful 위젯을 사용함으로써 State가 변경될 때 마다 UI를 바꿔줄 수 있다.
+
+```
+class _MyAppState extends State<MyApp> {
+
+  int count = 0;
+
+  void increase(){
+    // setState :: 호출되면 State 클래스한테 State가 변경되었다는 것을 알려준다.
+    //State가 변경될 때 마다 UI를 새로 그려준다.
+    setState(() {
+      count++;
+    });
+  }
+
+  //실제로 움직이는 UI는 이쪽에서 처리하게 된다.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(title: Text("Stateful Widget"),),
+          body: Column(
+            children: <Widget>[
+              Text("${count}"),
+              RaisedButton(onPressed: increase, child: Text("increase"),)
+              //RaiseButton -> onPressed -> increase() -> setState() ==>  UI가 새로 그려지는 과정
+              
+            ],
+          ),
+      ),
+    );
+  }
+}
+
+```
+
