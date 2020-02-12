@@ -192,3 +192,22 @@ MaterialApp(
 
 
 https://medium.com/@dan_kim/%EB%B2%88%EC%97%AD-flutter-%EC%9C%84%EC%A0%AF-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0-1a22231d25c6
+
+
+ㆍFlutter Widget
+    - Sateful, Stateless Widget
+    - Row / Column 
+    - mainAxisAlignment / crossAxisAlignment
+    - Flexible / Expanded
+    
+    EXPANDED (확장)
+    자식(Child)이 사용 가능한 공간을 채우도록 행(Row), 열(Column) 또는 유연한영역(Flex)의 자식을 확장하는 위젯.
+
+    - SizeBox
+    - Spacer
+    - Text
+    - Icon
+    - Image
+    - Button
+
+    
