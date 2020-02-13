@@ -26,5 +26,5 @@ styles.xml에서 windowBackground에 Drawable을 설정하면 Launch Screen으�
 
 
 ### Reference
-https://nsinc.tistory.com/210
-https://flutter.dev/docs/development/ui/splash-screen/android-splash-screen
+- https://nsinc.tistory.com/210
+- https://flutter.dev/docs/development/ui/splash-screen/android-splash-screen
